@@ -2,7 +2,7 @@
 
 companies = {"ECC": "Zamora St., Tarlac City, Tarlac",
              "Civil Service Commission": "Tarlac City",
-             "Tarlac City Water District": " Maliwalo Tarlac City",
+             "Tarlac City Water District": "Maliwalo Tarlac City",
              "Wireless Access for Health": "Diwa ng Tarlac"}
 
 print(companies.get("ECC"))  # this accessed the value of the key ECC
@@ -24,3 +24,20 @@ print(companies)
 companies.pop("ECC")  # removes specific key:value
 companies.popitem()  # removes latest key:value
 print(companies)
+
+
+print()
+
+k = companies.keys()
+for k in companies.keys():
+    print(k)
+
+print()
+v = companies.values()
+for v in companies.values():
+    print(v)
+
+
+print("\nWhole lay out of the dictionary:")
+for key, value in companies.items():
+    print(f"{key} : {value}")
